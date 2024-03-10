@@ -1,5 +1,5 @@
 steps: 
   #Exectue SonarCloud Scan
-  - name: maven: 3-jdk-11
+  - name: maven:3-jdk-11
     entrypoint: mvn
     args: ['verify','sonar:sonar','-Dsonar.host.url=https://sonarcloud.io/', '-Dsonar.organization=josberb37','-Dsonar.projectKey=gcp-devsecops-repo-without-cloudbuild','-Dsonar.login=5dbc40179dae43199fdbeb1b316642647d7680c1']
